@@ -1,0 +1,39 @@
+{
+  "name": "map-my-project",
+  "icon": "ico.png",
+  "displayName": "Map my project",
+  "description": "Map My Project is a tool that analyzes the folder structure of a project and generates a textual description of the structure found. With this tool, you can have a clear view of the organization of your project and easily understand how folders and files are related.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "map-my-project.generateStructure",
+        "title": "Generate Folder Structure"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.100.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1"
+  },
+  "dependencies": {
+    "azure-devops-extension-sdk": "^4.0.2"
+  }
+}
