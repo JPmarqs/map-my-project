@@ -35,5 +35,9 @@
   },
   "dependencies": {
     "azure-devops-extension-sdk": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JPmarqs/map-my-project.git"
   }
 }
